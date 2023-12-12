@@ -26,6 +26,6 @@ services:
     image: olgaolga1/taski_gateway  # Качаем с Docker Hub
     env_file: .env
     volumes:
-      - static_volume:/staticfiles/
+      - static_volume://
     ports:
       - 8000:80
